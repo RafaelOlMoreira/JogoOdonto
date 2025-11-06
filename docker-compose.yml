@@ -1,0 +1,28 @@
+version: '3.8'
+services:
+mongo:
+image: mongo:6.0
+restart: unless-stopped
+volumes:
+- mongo_data:/data/db
+environment:
+- MONGO_INITDB_DATABASE=jogo-odontologico
+backend:
+build: ./backend
+restart: unless-stopped
+environment:
+- MONGO_URI=mongodb+srv://rafaeldev:DEVRafael@cluster0.bvjpbbh.mongodb.net/?appName=Cluster0
+- PORT=4000
+ports:
+- '4000:4000'
+depends_on:
+- mongo
+frontend:
+build: ./frontend
+restart: unless-stopped
+ports:
+- '3000:80'
+depends_on:
+- backend
+volumes:
+mongo_data:
