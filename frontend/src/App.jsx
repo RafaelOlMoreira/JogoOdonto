@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import Header from './components/header'
+import Header from './components/Header'
 import LoginForm from './components/LoginForm'
 import GameBoard from './components/GameBoard'
 import Ranking from './components/Ranking'
