@@ -2,7 +2,7 @@ require('dotenv').config();
 const mongoose = require('mongoose');
 const Item = require('./models/Item');
 const Score = require('./models/Score');
-const MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:27017/jogoodontologico';
+const MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:27017/jogo-odontologico';
 const items = [
     {
         name: 'Luvas descartáveis usadas',
