@@ -36,9 +36,6 @@ async function seed() {
     await Item.deleteMany({});
     await Score.deleteMany({});
     await Item.insertMany(items);
-    // exemplo de scores
-    await Score.create({ playerIdentifier: 'teste1', points: 120 });
-    await Score.create({ playerIdentifier: 'teste2', points: 90 });
     console.log('Seed complete');
     process.exit(0);
 }
