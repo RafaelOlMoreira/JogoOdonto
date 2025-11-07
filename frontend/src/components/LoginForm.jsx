@@ -19,9 +19,9 @@ export default function LoginForm({ onLogin }) {
         <form onSubmit={submit} className="max-w-md mx-auto bg-[#262626] p-4
 rounded">
             <label className="block mb-2">Identificador (nome, matrícula ou email)</label>
-            <input value={identifier} onChange={e => setIdentifier(e.target.value)}
+            <input value={identifier} onChange={e => setIdentifier(e.target.value)} placeholder='Informe seu identificador...'
                 className="w-full p-2 rounded text-black" />
-            <button disabled={loading} className="mt-3 w-full py-2 rounded bgblue-600">Entrar</button>
+            <button disabled={loading} className="mt-3 w-full py-2 rounded bg-blue-600 hover:bg-blue-700">Entrar</button>
         </form>
     )
 }
