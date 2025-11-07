@@ -7,7 +7,7 @@ const items = [
     {
         name: 'Luvas descartáveis usadas',
         category: 'Infectante',
-        image_url: '/placeholders/luvas.webp',
+        image_url: '../frontend/public/placeholders/Luvas.webp',
         description: 'Luvas contaminadas com sangue e fluidos.'
     },
     {
