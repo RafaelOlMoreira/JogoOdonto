@@ -7,7 +7,7 @@ export default function ModalResult({ score, onClose }) {
                 <p className="mt-2">Parabéns, você fez:</p>
                 <p className="mt-2">{score} Pontos</p>
                 <div className="mt-4 flex gap-2">
-                    <button onClick={onClose} className="py-2 px-4 bg-blue-600 hover:bg-blue-700 text-white rounded">Fechar</button>
+                    <button onClick={onClose} className="py-2 px-4 bg-blue-600 hover:bg-blue-700 text-white rounded text-center">Fechar</button>
                 </div>
             </div>
         </div>
