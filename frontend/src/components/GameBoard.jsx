@@ -42,7 +42,7 @@ export default function GameBoard({ player, items = [], reloadItems }) {
                 <div className="flex-1 flex items-center justify-center p-4">
                     <TrashItem item={current} onAnswer={handleAnswer} />
                 </div>
-                <div className="w-full md:w-96 grid grid-cols-3 gap-3">
+                <div className="w-full md:w-96 grid grid-cols-2 gap-3">
                     {BINS.map(bin => (
                         <Bin key={bin.id} bin={bin} onDrop={handleAnswer} />
                     ))}
