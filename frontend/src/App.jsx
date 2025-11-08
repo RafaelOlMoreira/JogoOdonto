@@ -3,6 +3,7 @@ import Header from './components/Header'
 import LoginForm from './components/LoginForm'
 import GameBoard from './components/GameBoard'
 import Ranking from './components/Ranking'
+import Footer from './components/Footer'
 import { getItems } from './utils/api'
 import { DEFAULT_ROUND_SIZE } from './utils/constants'
 export default function App() {
@@ -31,6 +32,7 @@ export default function App() {
           </>
         )}
       </main>
+      <Footer />
     </div>
   )
 }
