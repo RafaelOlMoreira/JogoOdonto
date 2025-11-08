@@ -12,6 +12,7 @@ app.use('/api/jogador', jogadorRoutes);
 app.use('/api/itens', itensRoutes);
 app.use('/api/rodada', rodadaRoutes);
 const PORT = process.env.PORT || 4000;
+const MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:27017/jogo-odontologico';
 
 mongoose.connect(MONGO_URI, {
     useNewUrlParser: true, useUnifiedTopology:
@@ -24,4 +25,4 @@ mongoose.connect(MONGO_URI, {
     .catch(err => {
         console.error('Mongo connection error', err);
         process.exit(1);
-    });const MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:27017/jogo-odontologico';
+    });
