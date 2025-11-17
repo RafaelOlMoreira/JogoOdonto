@@ -5,10 +5,10 @@ const Score = require('./models/Score');
 const MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:27017/jogo-odontologico';
 const items = [
     {
-        name: 'Agulha hipodérmica',
+        name: 'Agulha',
         category: 'Perfurocortante',
         image_url: '/images/Agulha.jpeg',
-        description: 'Siringa e agulha usadas.'
+        description: '(Usada)'
     },
     {
         name: 'Restos de alimento',
@@ -20,13 +20,13 @@ const items = [
         name: 'Ampola de anestésico',
         category: 'Perfurocortante',
         image_url: '/images/Ampola.jpeg',
-        description: 'Ampola de medicamento/anestésico.'
+        description: '(Vazia)'
     },
     {
         name: 'Capote descartável',
         category: 'Biológico',
         image_url: '/images/Capote.jpeg',
-        description: 'Vestimenta de proteção.'
+        description: '(Usado)'
     },
     {
         name: 'Copo descartável',
@@ -41,20 +41,20 @@ const items = [
         description: 'Luva de látex.'
     },
     {
-        name: 'Luva nitrílica',
-        category: 'Biológico',
+        name: 'Caixa de Luva e Touca',
+        category: 'Comum',
         image_url: '/images/LuvaNitrile.jpeg',
-        description: 'Luva de nitrila.'
+        description: '(Vazia)'
     },
     {
-        name: 'Massa para molde',
+        name: 'Molde de gesso para descarte',
         category: 'Comum',
         image_url: '/images/Massa.jpeg',
         description: 'Material utilizado para moldagem.'
     },
     {
         name: 'Fio de nylon',
-        category: 'Comum',
+        category: 'Perfurocortante',
         image_url: '/images/Nylon.jpeg',
         description: 'Fio usado para amarrações ou fixações.'
     },
@@ -65,22 +65,28 @@ const items = [
         description: 'Utilizado para secagem.'
     },
     {
-        name: 'Plástico para encapar/adesivo',
-        category: 'Biológico',
+        name: 'Grau Cirúrgico Estéril',
+        category: 'Comum',
         image_url: '/images/Plastico.jpeg',
-        description: 'Filme plástico.'
+        description: '(Sem Contaminação)'
     },
     {
         name: 'Revelador radiográfico',
         category: 'Químico',
         image_url: '/images/Revelador.jpeg',
-        description: 'Solução química usada para revelação de radiografias odontológicas.'
+        description: '(Solução para revelação de Radiografia)'
     },
     {
         name: 'Touca descartável',
         category: 'Biológico',
         image_url: '/images/Touca.jpeg',
-        description: 'Touca de proteção.'
+        description: '(Usado)'
+    },
+    {
+        name: 'Bisturi',
+        category: 'Perfurocortante',
+        image_url: '/images/Bisturi.jpeg',
+        description: 'Ótimo para cortes.'
     }
     
 ];
